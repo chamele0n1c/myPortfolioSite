@@ -1,5 +1,12 @@
 const sqrl = require('squirrelly');
 const app = require('express')();
+const rateLimit = require("express-rate-limit");
+
+const apiLimiter = rateLimit({
+    windowMs: 10 * 60 * 1000, // 10 minutes
+    max: 100
+  });
+app.use(apiLimiter);
 /*
 
 const fs = require('fs');
