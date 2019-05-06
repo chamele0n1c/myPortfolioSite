@@ -1,14 +1,16 @@
 const sqrl = require('squirrelly');
 const app = require('express')();
+/*
+
 const fs = require('fs');
 const https = require('https');
-
 const privateKey  = fs.readFileSync('ssl/server.key', 'utf8');
 const certificate = fs.readFileSync('ssl/server.crt', 'utf8');
 const credentials = {key: privateKey, cert: certificate};
 
+*/
 const httpPort = 80;
-const sslPort = 443;
+//const sslPort = 443;
 const baseURL = 'http://localhost/';
 const views = {
 
